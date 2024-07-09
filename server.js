@@ -3,7 +3,7 @@ const express = require("express");
 const app = express();
 const peerServer = PeerServer({
   port: process.env.PORT || 9000,
-  path: "/myapp",
+  path: "/",
 });
 
 app.use("/peerjs", peerServer);
